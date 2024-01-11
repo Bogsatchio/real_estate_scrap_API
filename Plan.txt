@@ -1,0 +1,21 @@
+Całość aplikacji mogłaby być zamknięta w kontenerze Dockerowym
+Punkty 1 i 2 mogą być triggerowane z Airflow
+
+1. scrapping_nieruchomości.py zbiera informacje ze strony (otodom, gratka[?]) i zapisuje w pliku json gdzie wszystkie dane są stringiem
+
+2.  - zaczytanie jsona do ujednoliconej tabelarycznej formy
+    - oczyszczenie i przygotowanie danych
+    - wrzucenie ich jako tabeli do bazy
+    - sczytanie metadanych i zapisanie ich do tabel
+
+3. stworzenie API i połączenie go z bazą danych.
+    - zaczytywanie danych w bazie
+    - triggerowanie webscrappingu ?
+
+
+TODO short term:
+- wrzucenie na gita projektu z API
+- wrzucenie na gita projektu scrap_nieruchomości
+- odpalenie scrap_nieruchomości w dockerze
+- odpalenie czyszczenia danych w dockerze
+- założenie bazy danych w sql_lite i wrzucanie df do bazy
